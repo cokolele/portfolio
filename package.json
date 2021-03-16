@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Not much of a portfolio with that one project",
+  "main": "static/index.html",
+  "scripts": {
+    "start": "cd static & live-server --port=80 --host=0.0.0.0 --quiet"
+  },
+  "keywords": ["personal website", "portfolio"],
+  "author": "Cokolele",
+  "license": "ISC"
+}
