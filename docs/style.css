@@ -300,6 +300,18 @@ main section.projects .content > * {
     color: #989898;
 }
 
+.tab-note {
+    font-size: 0.6em;
+    color: red;
+    position: relative;
+    left: -1em;
+    top: 1em;
+    border: 1px solid red;
+    display: inline-block;
+    border-radius: .4em;
+    padding: .3em .6em;
+}
+
 .slider-item-type {
     display: none;
 }
