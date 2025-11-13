@@ -3,7 +3,7 @@
  */
 (() => {
     CanvasWaves.create(".landpage", {
-      color: "rgb(255, 119, 119, 0.8)",
+      color: "rgba(255,122,46,0.8)",
       baseHeight: "2%",
       waveHeight: "6%",
       speed: 30000,
@@ -11,20 +11,28 @@
     }).toggleAnimation();
 
     CanvasWaves.create(".landpage", {
-      color: "rgba(200, 160, 180, 0.7)",
+      color: "rgba(255,255,255,0.7)",
       baseHeight: "0%",
-      waveHeight: "4%",
+      waveHeight: "28%",
       wavesVisible: 1,
       speed: 15000,
       horizontalOffset: Math.random(),
     }).toggleAnimation();
 
+    // CanvasWaves.create(".landpage", {
+    //   color: "rgba(255, 160, 119, 0.9)",
+    //   baseHeight: "3%",
+    //   waveHeight: "6%",
+    //   speed: 20000,
+    //   horizontalOffset: Math.random(),
+    // }).toggleAnimation();
+
     CanvasWaves.create(".landpage", {
-      color: "rgba(255, 160, 119, 0.9)",
-      baseHeight: "3%",
-      waveHeight: "6%",
-      speed: 20000,
-      horizontalOffset: Math.random(),
+        color: "rgba(244,244,244,0.9)",
+        baseHeight: "33%",
+        waveHeight: "67%",
+        speed: 20000,
+        horizontalOffset: Math.random(),
     }).toggleAnimation();
 })();
 

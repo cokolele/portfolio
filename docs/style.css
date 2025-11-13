@@ -47,18 +47,24 @@ p em {
 a {
     text-decoration: none;
     position: relative;
-    color: rgb(255, 119, 119);
+    color: rgb(255, 122, 46);
     font-weight: 400;
     padding: 0 0.2em;
-    letter-spacing: 0.08em;
-    text-shadow: -1px 1px 1px rgba(56,56,56, 0.55),
-        -2px 2px 3px rgba(0,0,0,0.2);
-    transition: text-shadow 0.3s ease-out;
+    letter-spacing: 0.05em;
+    transition: text-shadow 0.3s ease-out, text-underline-offset 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-a:hover {
-    text-shadow: -1px 1px 0 rgba(56,56,56, 0.8),
-        -3px 5px 5px rgba(0,0,0,0.3);
+a.--hoverable {
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(255, 255, 255, 0);
+}
+
+a.--hoverable:hover {
+    text-underline-offset: 6px;
+    text-decoration-color: rgb(255, 145, 74);
 }
 
 a:active {
@@ -199,6 +205,20 @@ canvas {
     padding-right: 30rem;
 }
 
+.hints {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+}
+
+.hints img {
+    max-height: 4rem;
+    height: 100%;
+    width: auto;
+    opacity: 0.5;
+}
+
 @media (max-width: 1520px) /* small desktop */
 {
     .landpage-info {
@@ -208,6 +228,9 @@ canvas {
 
 @media (max-width: 1220px) /* tablet */
 {
+    .hints {
+        display: none;
+    }
 }
 
 @media (max-width: 1020px) /* small table/landscape */
