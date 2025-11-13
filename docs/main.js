@@ -43,6 +43,7 @@
     const [arrowLandpage, arrowProjects] = document.querySelectorAll(".arrow");
     const [sectionLandpage, sectionProjects] = document.querySelectorAll("main section");
     const main = document.querySelector("main");
+    const hints = document.querySelector(".hints");
 
     const hideScrolledSection = () => {
         if (main.classList.contains("--scrolled")) {
@@ -60,6 +61,10 @@
         sectionProjects.style.visibility = "";
         sectionLandpage.style.overflow = "hidden";
         sectionProjects.style.overflow = "hidden";
+
+        if (!hints.classList.contains("--hidden")) {
+            hints.classList.add("--hidden");
+        }
     }
 
     const addScroll = () => {

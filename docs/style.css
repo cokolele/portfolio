@@ -3,11 +3,11 @@
  */
 
 ::selection {
-    background: rgba(255, 119, 119, 0.1);
+    background: rgba(255, 145, 74, 0.1);
 }
 
 ::-moz-selection {
-    background: rgba(255, 119, 119, 0.1);
+    background: rgba(255, 145, 74, 0.1);
 }
 
 html {
@@ -73,8 +73,8 @@ a:active {
 
 a:focus-visible {
     outline-offset: 0;
-    outline: 2px outset rgba(255, 119, 119, 0.3);
-    background-color: rgba(255, 119, 119, 0.1);
+    outline: 2px outset rgba(255, 145, 74, 0.3);
+    background-color: rgba(255, 145, 74, 0.1);
 }
 
 @keyframes arrow-idle {
@@ -84,7 +84,7 @@ a:focus-visible {
 }
 
 a.arrow {
-    display: block;
+    display: none;
     padding: 0.3em;
     font-size: 3rem;
     user-select: none;
@@ -210,6 +210,12 @@ canvas {
     right: 0;
     bottom: 0;
     margin: 2rem;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+.hints.--hidden {
+    opacity: 0;
 }
 
 .hints img {
@@ -280,7 +286,7 @@ main section.projects .content > * {
     left: 0;
     height: 0.3em;
     border-radius: 1em;
-    background-color: rgb(255, 119, 119);
+    background-color: rgb(255, 145, 74);
     transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -300,8 +306,8 @@ main section.projects .content > * {
 
 .tab:focus-visible {
     outline-offset: 0;
-    outline: 2px outset rgba(255, 119, 119, 0.3);
-    background-color: rgba(255, 119, 119, 0.1);
+    outline: 2px outset rgba(255, 145, 74, 0.3);
+    background-color: rgba(255, 145, 74, 0.1);
 }
 
 .tab-title, .slider-item-title {
@@ -325,11 +331,11 @@ main section.projects .content > * {
 
 .tab-note {
     font-size: 0.6em;
-    color: red;
+    color: rgb(255, 100, 0);
     position: relative;
     left: -1em;
     top: 1em;
-    border: 1px solid red;
+    border: 1px solid rgb(255, 145, 74);
     display: inline-block;
     border-radius: .4em;
     padding: .3em .6em;
